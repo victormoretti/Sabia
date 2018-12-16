@@ -1,0 +1,7 @@
+{
+    "name": "victormoretti/sabia",
+    "description": "Sabia is a tiny PHP MVC framework for monolithic web applications.",
+    "require": {
+        "php": "^7.0"
+    }
+}

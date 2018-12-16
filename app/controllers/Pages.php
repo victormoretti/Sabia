@@ -20,11 +20,11 @@
 				# $postsNumber = $this->postModel->postsNumber();   //Calling it from the Post Model
 
 			$data = [
-				'title' => 'This is nest.',
-				'paragraph' => 'Your nest application has been successfully installed!<br>
+				'title' => 'This is Sabia.',
+				'paragraph' => 'Your Sabia application has been successfully installed!<br>
 				Check the configuration file in "/config/config.php" and set the definitions for your project needs.<br>
-				If you need help, just refer to the <a href="https://github.com/victormoretti/nest">documentation</a> or open an issue.<br>
-				Nest is a GNU GPL3.0 open source MVC PHP framework thought to serve the community. Branch it, make it better.<br>
+				If you need help, just refer to the <a href="https://github.com/victormoretti/Sabia">documentation</a> or open an issue.<br>
+				Sabia is a GNU GPL3.0 open source MVC PHP framework thought to serve the community. Branch it, make it better.<br>
 				And, of course, happy coding!',
 				# 'postsNumber' => $postsNumber   //Passing it to the view as data
 			];
@@ -34,7 +34,7 @@
 		public function about(){
 			$data = [
 				'title' => 'About Page',
-				'paragraph' => 'This is another example page so you can get the gist of nest.<br>
+				'paragraph' => 'This is another example page so you can get the gist of Sabia.<br>
 				I normally use a "pages" directory inside Views, so I can organize things better.<br>
 				For instance, hundreds of blog posts could go right inside a "posts" directory for better content management.<br>
 				This about age, together with the index page, is inside the "/app/views/pages" directory.',
