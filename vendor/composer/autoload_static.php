@@ -6,9 +6,32 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit5bfd2e2e5a482a77605653fadb3bedeb
 {
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Sabia\\' => 6,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Sabia\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/libraries',
+        ),
+    );
+
+    public static $classMap = array (
+        'Sabia\\Controller' => __DIR__ . '/../..' . '/app/libraries/Controller.php',
+        'Sabia\\Core' => __DIR__ . '/../..' . '/app/libraries/Core.php',
+        'Sabia\\Database' => __DIR__ . '/../..' . '/app/libraries/Database.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5bfd2e2e5a482a77605653fadb3bedeb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5bfd2e2e5a482a77605653fadb3bedeb::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit5bfd2e2e5a482a77605653fadb3bedeb::$classMap;
 
         }, null, ClassLoader::class);
     }

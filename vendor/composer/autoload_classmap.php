@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Sabia\\Controller' => $baseDir . '/app/libraries/Controller.php',
+    'Sabia\\Core' => $baseDir . '/app/libraries/Core.php',
+    'Sabia\\Database' => $baseDir . '/app/libraries/Database.php',
 );

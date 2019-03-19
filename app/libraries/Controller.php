@@ -4,6 +4,9 @@
  * Loads the Models and Views
  */
 
+//Setting the class namespace
+namespace Sabia;
+
 class Controller {
 
 	//Load model method

@@ -5,6 +5,8 @@
 	 * Following the MVC pattern, you should make all of your scripting logic and
 	 * database operations here and send them through the Controller to the View.
 	 */
+	use Sabia\Database;
+	
 	class Post {
 		private $db;
 

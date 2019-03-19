@@ -5,6 +5,9 @@
  *  URL FORMAT -  /controller/method/params
  */
 
+//Setting the class namespace
+namespace Sabia;
+
 class Core {
 	protected $currentController = 'Pages';
 	protected $currentMethod = 'index';
@@ -29,9 +32,9 @@ class Core {
 		$this->currentController = new $this->currentController;
 
 
-		//For the second array value, check if is there are any values
+		//For the second array value, check if there is any value
 		if( isset($url[1]) ){
-			//For the second array value, check if is there are any methods
+			//For the second array value, check if is there any method
 			if( method_exists($this->currentController, $url[1]) ){
 				$this->currentMethod = $url[1];
 				unset($url[1]);

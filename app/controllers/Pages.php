@@ -6,6 +6,8 @@
 	 * data by the Model and send it to the View. Likewise, the Controller
 	 * takes data input from the View and send it to be processed by the Model.
 	 */
+	use Sabia\Controller;
+
 	class Pages extends Controller{
 
 		public function __construct(){
@@ -37,7 +39,7 @@
 				'paragraph' => 'This is another example page so you can get the gist of Sabia.<br>
 				I normally use a "pages" directory inside Views, so I can organize things better.<br>
 				For instance, hundreds of blog posts could go right inside a "posts" directory for better content management.<br>
-				This about age, together with the index page, is inside the "/app/views/pages" directory.',
+				This about page, together with the index page, is inside the "/app/views/pages" directory.',
 			];
 			$this->view('pages/about', $data);
 		}
